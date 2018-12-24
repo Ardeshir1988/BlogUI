@@ -1,9 +1,9 @@
-#BlogUI
+# BlogUI
 This project is frontend of my personal blog <https://ardeshirahouri.ir> which written in angular 7 
 And also backend part available on BlogBackend.
 this is my first effort in angular framework...
 
-#About My Blog
+# About My Blog
 Blog project includes:
 frontend => Angular7 , bootstrap 4
 backend => spring-boot2, spring-data, spring-security (jjwt) 
