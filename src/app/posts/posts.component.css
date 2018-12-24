@@ -1,0 +1,40 @@
+
+
+ul {
+    list-style-type: none;
+  }
+  .card {
+    width: 22.5rem;
+    height: 31rem;
+
+    margin: 0.55rem;
+    border: none; 
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.29s;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.06); 
+    border-radius: 0.15rem;
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.card-title{
+    height: 5.5rem;
+    overflow: hidden;
+}
+
+div.card:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
+}
+.card-img-top{
+    max-width: 22.5rem;
+    max-height: 22.5rem;
+}
+
+

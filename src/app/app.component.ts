@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'BlogUI';
+  title = 'Ardeshir Ahouri';
+  constructor(private router: Router) { }
+  searchPost(value)
+  {
+    this.router.navigateByUrl('/posts?keyword='+value);
+  }
 }

@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    min-height: 100% !important;
+    background-color:rgb(242, 242, 242);
+ /* background-image: linear-gradient(to top, #162121, #0f2d32, #003847, #00425e, #054b76); */
+ /* background-image: linear-gradient(to top, #21161a, #2f141c, #3c111a, #480d15, #53090b); */
+}
+.footer {
+    margin-top: 30px;
+    text-align: center; 
+    }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+

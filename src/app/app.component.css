@@ -1,0 +1,17 @@
+
+
+.content{
+        margin-top: 4rem;
+        min-height: 100vh;
+
+    }
+.navbar{
+     background-color: black;
+  max-height: 2.5rem;
+ }
+a {
+    color: rgb(255, 255, 255);
+}
+.form-control{
+    max-height: 1.5rem;
+}

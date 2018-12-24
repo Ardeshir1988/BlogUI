@@ -1,0 +1,50 @@
+#postdetailCONTAINER{
+
+    border: .5px solid #dbdbdb;
+    border-radius: 5px;
+    color: #333;
+     
+
+}
+
+#postdetailHEADER{
+
+        background-color: #000000;
+        border-radius: 5px 5px 0 0;
+        color: #fafafa;
+        font-size: 22px;
+        padding: 8px 16px;
+  
+}
+
+#postdetailCONTENT
+{
+    direction: rtl;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+#postdetailFOOTER
+{
+    margin-left: auto; margin-right: auto;
+    border-top: .5px solid rgb(224, 224, 224);
+    font-size: 25;
+    background-color: #fff;
+}
+
+div.col{
+    font-size: 14px;
+    margin: 3px;
+}
+div.d-flex{
+    font-size: 15px;
+    margin: 3px;
+}
+code{
+    color:#333;
+}
+.codesyntax{
+    text-align: left;
+    counter-increment: line;
+
+}
+

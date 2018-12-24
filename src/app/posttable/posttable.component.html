@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-success btn-sm" (click)="addPost('PosteditorComponent')">Add Post</button>
+<table class="table table-hover">
+  <thead>
+    <tr>
+        <th scope="col">Operation</th>
+        <th scope="col">Date</th>
+        <th scope="col">Title</th>
+      <th scope="col">ID</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let post of postlist">
+          <td>
+              <button type="button" class="btn btn-danger btn-sm"  (click)="deletePost(post.postId)">delete</button>
+            <button type="button" class="btn btn-primary btn-sm" (click)="editPost(post.postId)">edit</button>
+
+          </td>
+          <td>{{post.postDate}}</td>
+          <td>{{post.postTitle}}</td>
+          <td >{{post.postId}}</td>
+    </tr>
+  </tbody>
+</table>
+
+

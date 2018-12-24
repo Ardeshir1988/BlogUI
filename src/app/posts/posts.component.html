@@ -1,0 +1,16 @@
+<div class="row card-group" style="direction: rtl;margin-top: 20px;">
+
+  <!-- <div class="col-4"  *ngFor="let post of posts"  (click)="gotoPostDetail( post)"> -->
+     <div  *ngFor="let post of posts"  (click)="gotoPostDetail( post)">
+      <div class="card">
+        <div class="card-content">
+          <img id="card-img" class="card-img-top img-fluid" src="http://ardeshirahouri.ir:8080/images/{{post.postImage}}" alt="Card image cap">
+          <div class="card-body">
+             <h4 class="card-title">{{post.postTitle}}</h4>
+             <!-- <div class="card-text" >{{post.postContent}}</div> -->
+          </div>
+    </div>
+  </div>
+  </div>
+</div>
+

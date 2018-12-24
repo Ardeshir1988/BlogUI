@@ -1,0 +1,35 @@
+<div class="row panel">
+  <!-- Button trigger modal -->
+
+  <div class="col-10" >
+   <ng-template  appPanel></ng-template>
+  </div>
+  <div class="col-2">
+
+    <div class="sidebar">
+      <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                    <button class="btn btn-sm btn-outline-secondary" type="button" (click)="changeComponent('PosttableComponent')">نوشته</button>
+                </li>
+ 
+          <li class="nav-item active">
+              <button class="btn btn-sm btn-outline-secondary" (click)="changeComponent('CategoryComponent')" >دسته بندی</button>
+            </li>
+            <li class="nav-item active">
+                    <button class="btn btn-sm btn-outline-secondary" (click)="changeComponent('TagComponent')" >تگ</button>
+                  </li>
+        </ul>
+
+
+            post quantity    {{statistic?.postQuantity}}<br>
+             
+            category quantity   {{statistic?.categoryQuantity}}<br>
+            
+            tag quantity  {{statistic?.tagQuantity}}<br>
+                 
+             total view   {{statistic?.totalView}}<br>
+    
+</div>
+  </div>
+</div>
+

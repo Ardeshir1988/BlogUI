@@ -1,0 +1,26 @@
+
+<div style="height: 15px;">
+</div>
+<div id="postdetailCONTAINER">
+    <div id="postdetailHEADER">
+        {{postdetail?.postTitle}}
+    </div>
+    <div id="postdetailCONTENT" [innerHTML]="postdetail?.postContent">
+          <!-- {{postdetail?.postContent}} -->
+
+    </div>
+        <div id="postdetailFOOTER" class="row">
+             <div class="col" >
+                <div class="row">
+                <div class="d-flex align-items-center" *ngFor="let tag of postdetail?.tags"> <a href="/posts?tagname={{tag.tagName}}" class="badge badge-success">  {{tag.tagName}}</a></div>
+            </div>
+              </div>
+
+
+          <div class="col">
+
+                {{postdetail?.postDate | date:'longDate'}}     <span> - {{postdetail?.postView}}v </span>
+    
+          </div>
+        </div>
+</div>

@@ -1,0 +1,79 @@
+
+<div class="row">
+    <div class="col">
+            <div class="alert alert-success" *ngIf="onSuccess" role="alert">
+                    {{serverResponse}}
+                  </div>
+                  <div class="alert alert-danger" *ngIf="onError" role="alert">
+                    {{serverResponse}}
+                  </div>
+            <form class="form-horizontal" method="post" (ngSubmit)="onSubmit()">
+                <fieldset>
+                    <legend class="text-center header">Post Editor</legend>
+                    <div class="form-group">
+                        <div class="col">
+                            <input type="text"  [formControl]="postid" readonly class="form-control-plaintext" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            <input  [formControl]="posttitle"  type="text" placeholder="Title" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            <input  [formControl]="posttitleurl" type="text" placeholder="Title Url" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            <select  class="dropdown"  [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}"  (ngModelChange)="onChangeCategory($event)">
+                                <option  class="dropdown-item" *ngFor="let cat of categories" [ngValue]="cat">{{cat.categoryName}}</option>
+                            </select>        
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                           <tag-input [(ngModel)]="selectedTags"   (onAdd)="addTag($event)" [onlyFromAutocomplete]="true" [ngModelOptions]="{standalone: true}" 
+                                (onRemove)="removeTag($event)">
+                                 <tag-input-dropdown [autocompleteItems]="tags" [identifyBy]="'tagId'" [displayBy]="'tagName'" ></tag-input-dropdown>
+                            </tag-input>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col">
+                            <!-- <textarea class="form-control" [formControl]="postcontent" placeholder="Post Content" rows="7"></textarea> -->
+                            <div [froalaEditor]  class="form-control" [formControl]="postcontent" >Hello, Froala!</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="col">
+                                    <input type="file" name="file" id="file" (change)="onFileChanged($event)" />
+                            </div>
+                    </div>
+                
+
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-5" >
+        <div class="card">
+            <div class="card-content">
+                <img id="card-img" class="card-img-top img-fluid" src="{{imagesrc}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">{{posttitle.value}}</h4>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
