@@ -24,7 +24,7 @@ export class CategoriesComponent implements OnInit {
     this.categoryid.setValue(cat.categoryId);
     this.categoryname.setValue(cat.categoryName);
   }
-  newCategory(cat){
+  newCategory(){
     this.categoryid.setValue('0');
     this.categoryname.setValue('');
   }
