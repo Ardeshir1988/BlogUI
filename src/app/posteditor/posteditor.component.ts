@@ -107,9 +107,10 @@ onFileChanged(event: any) {
     this.setImage(res.postImage);
     this.selectedValue=this.categories.find(x=>x.categoryId==res.postCategory.categoryId);
     this.selectedCategory=res.postCategory;
-      res.tags.forEach(x=>{x.display=x.tagName;x.value=x.tagId});
-     this.selectedTags= res.tags;
-     this.selectedTag=res.tags;
+    res.tags.forEach(x=>{x.display=x.tagName;x.value=x.tagId});
+    this.selectedTags= res.tags;
+    this.selectedTag=res.tags;
+    this.post.postView=res.postView;
    });
   
   }
